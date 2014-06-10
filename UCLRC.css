@@ -290,7 +290,7 @@ table.navbox th {
 */
 div.listenlist {
     background:
-        url("http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png");
+        url("//upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png");
     padding-left: 40px;
 }
 
@@ -329,7 +329,7 @@ div.medialist ul li li {
 #mw_content  a[href*=".PDF?"].external, 
 #mw_content  a[href*=".PDF#"].external {
     background: 
-        url("http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif")
+        url("//upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif")
         center right no-repeat;
     padding-right: 16px;
 }
@@ -339,7 +339,7 @@ div.medialist ul li li {
 #bodyContent span.PDFlink a,
 #mw_content span.PDFlink a {
     background: 
-        url("http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif")
+        url("//upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif")
         center right no-repeat;
     padding-right: 17px;
 }
@@ -961,7 +961,7 @@ sup, sub {
 /* Put a chequered background behind images, only visible if they have transparency */
 .gallerybox .thumb img,
 #file img {
-    background: white url("http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;
+    background: white url("//upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;
 }
 /* But no chequered background on articles, user pages or portals. */
 .ns-0 .gallerybox .thumb img,
@@ -989,4 +989,17 @@ sup, sub {
 #mw-user-domain-section {
     display: none !important;
 }
+
+code {
+	color: #cc3399 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	padding: 0.75em 0px 0.1em !important;
+}
+
+a {
+	font-weight: normal !important;
+}
+
 

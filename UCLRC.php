@@ -167,7 +167,7 @@ class UCLRCTemplate extends QuickTemplate {
    <?php $this->html( 'headelement' ); ?>
    <head>
       <title><?php echo $this->data['title']; ?></title>
-      <link rel="shortcut icon" href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?> /++resource++images/favicon2.ico" />
+      <link rel="shortcut icon" href="//www.ucl.ac.uk/<?php $this->ucldir(); ?> /++resource++images/favicon2.ico" />
          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
          <meta name="contact.name" content="UCL Research Computing" />
          <meta name="contact.email" content="rc-support@ucl.ac.uk" />
@@ -184,19 +184,19 @@ class UCLRCTemplate extends QuickTemplate {
 
          <!--Start General Layout Styles-->
             <!--Start UCL default layout 2 column styles-->
-            <link href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/ucl_default_2col_layout.css"
+            <link href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/ucl_default_2col_layout.css"
                   rel="stylesheet" type="text/css" />
-            <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://www.ucl.ac.uk/departments/++resource++patches/patch_ucl_default_2col_layout.css" /><![endif]-->
+            <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="//www.ucl.ac.uk/departments/++resource++patches/patch_ucl_default_2col_layout.css" /><![endif]-->
             <!--End UCL default layout 2 column styles-->
             
             <!--Corporate identity styling below-->
-            <link href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/screen/corp-identity-<?php $this->uclcolour(); ?>.css"
+            <link href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/screen/corp-identity-<?php $this->uclcolour(); ?>.css"
                   rel="stylesheet" type="text/css" />
             <!--Corporate identity styling above-->
          <!--End General Layout Styles-->
 
          <!--Start Print CSS-->
-         <link href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/print/print.css"
+         <link href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/print/print.css"
                media="print" rel="stylesheet"
                type="text/css" />
          <!--Set IE to be print smaller width, so that it doesn't crop content-->
@@ -209,7 +209,7 @@ class UCLRCTemplate extends QuickTemplate {
 
          <!--Start JQuery Javascript-->
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="http://www.ucl.ac.uk/news/++resource++default_scripts/jquery-1.3.2.min.js"><\/script>')</script>
+            <script>window.jQuery || document.write('<script src="//www.ucl.ac.uk/news/++resource++default_scripts/jquery-1.3.2.min.js"><\/script>')</script>
          <!--End JQuery Javascript-->
         
     
@@ -220,39 +220,39 @@ class UCLRCTemplate extends QuickTemplate {
 
          <!--Start JQuery Core User Interface Javascript-->
             <script type="text/javascript"
-                    src="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/ui.core.min.js"></script>
+                    src="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/ui.core.min.js"></script>
          <!--End JQuery Core User Interface Javascript-->
 
          <!--Start JQuery Font Resizer Javascript-->
             <script type="text/javascript"
-                    src="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/fontsizer.jquery.js"></script>
+                    src="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/fontsizer.jquery.js"></script>
          <!--End JQuery Font Resizer Javascript-->
 
          <!--Start JQuery cookie Javascript-->
             <script type="text/javascript"
-                    src="http://www.ucl.ac.uk/news/++resource++default_scripts/jquery.cookie.min.js"></script>
+                    src="//www.ucl.ac.uk/news/++resource++default_scripts/jquery.cookie.min.js"></script>
          <!--End JQuery cookie Javascript-->
 
 
 
 
          <script type="text/javascript"
-                 src="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/jquery.doc.ready.js"></script>
+                 src="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++default_scripts/jquery.doc.ready.js"></script>
 
          <!--Steal Silva Style Sheets-->
-         <!-- <link rel="stylesheet" type="text/css" href="http://www.ucl.ac.uk/isd/staff/research_services/local-styles.css"> -->
+         <!-- <link rel="stylesheet" type="text/css" href="//www.ucl.ac.uk/isd/staff/research_services/local-styles.css"> -->
          <!-- Add a margin back to the left column. -->
          <style>
             #left-silva-content{ margin-top: 1em; }
          </style>
          <!-- This page is originally templated on the news sites but then I took some bits from the faculties website. -->
          <link rel="stylesheet" type="text/css"
-               href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/local-styles.css" />
+               href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/local-styles.css" />
 
          <!-- Stylesheet for high contrast style switching -->
          <link rel="stylesheet" type="text/css"
                id="contrastCSS"
-               href="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/screen/ucl_normal_view.css" />
+               href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++css/screen/ucl_normal_view.css" />
          <!--end Silva Style Sheets-->
          
          <!-- styling to actually make links different to h5 elements. <?php /* Idiots. */ ?> -->
@@ -302,7 +302,7 @@ class UCLRCTemplate extends QuickTemplate {
              <!-- Graphic Border - End Part 1 -->
              <div class="page">
                 <div id="printLogo">
-                   <img src="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++images/printlogo.gif"
+                   <img src="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++images/printlogo.gif"
                         alt="UCL logo" />
                 </div>
                         
@@ -313,12 +313,12 @@ class UCLRCTemplate extends QuickTemplate {
                    <a class="skip" href="#content" title="skip link">skip to content</a><span class="hideme">.</span>
                    <!-- end: skip link navigation -->
                 </div>
-                <h1 class="section_header_white">
-                <?php $this->text('sitename'); ?> <br /><br /><span style="font-style: italic;"><?php $this->msg('tagline') ?> </span>
+                <h1 class="section_header_white" style="margin-left: 1em;">
+		<?php $this->text('sitename'); ?> <br /><br /><span style="font-style: italic;"><?php /* $this->msg('tagline') */ ?> </span>
                 </h1>
                 <span class="section_subheader_white"></span>
                 <div id="logo_holder"> 
-                   <a href="/"><img src="http://www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++images/corp-identity-<?php $this->uclcolour(); ?>.gif"
+                   <a href="/"><img src="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++images/corp-identity-<?php $this->uclcolour(); ?>.gif"
                                     alt="UCL Home" /></a>
                 </div> 
              </div>
@@ -340,10 +340,10 @@ class UCLRCTemplate extends QuickTemplate {
                 <!--End search box-->
                 <ul width="50%">
                    <li>
-                      <a href="http://www.ucl.ac.uk/">UCL Home</a>
+                      <a href="//www.ucl.ac.uk/">UCL Home</a>
                    </li>
                    <li>
-                      <a href="http://www.ucl.ac.uk/research-computing/">RC</a>
+                      <a href="//www.ucl.ac.uk/research-computing/">RC</a>
                    </li>
                    <li>
                       <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Wiki</a>
@@ -405,11 +405,11 @@ class UCLRCTemplate extends QuickTemplate {
                          <?php } ?>
 
                          </ul>
-                         <h3 class="heading">Other links</h3>
-                         <ul class="disc">
+                         <!-- <h3 class="heading">Other links</h3> -->
+                         <!-- <ul class="disc"> -->
                             <!-- -->
-                            <?php $this->data['title']; ?>
-                         </ul>
+                         <!--   <?php $this->data['title']; ?> -->
+                         <!-- </ul> -->
                          <?php  
                             // If the page isn't in any categories, don't render the header                       
                             global $wgOut;
@@ -536,11 +536,11 @@ class UCLRCTemplate extends QuickTemplate {
                             <a href="http://www.addthis.com/bookmark.php?v=250" 
                                onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" 
                                onmouseout="addthis_close()" onclick="return addthis_sendto()">
-                               <img src="http://s7.addthis.com/static/btn/lg-share-en.gif" 
+                               <img src="//s7.addthis.com/static/btn/lg-share-en.gif" 
                                     width="125" height="16" alt="Bookmark and Share" style="border:0" />
                             </a>
                             <script type="text/javascript" 
-                                    src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a32489d7efa03cb">
+                                    src="//s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a32489d7efa03cb">
                             </script>
                         </div>
                         <!-- AddThis Button END --> 
@@ -600,11 +600,11 @@ class UCLRCTemplate extends QuickTemplate {
                            #mw-content-text h1 { width: 100%; border-bottom: 1px solid #E0E0E0; }
                            #mw-content-text h2 { width: 100%; border-bottom: 1px solid #E0E0E0; }
                            h1 span.mw-headline { font-size: 13pt; font-weight: bold; } 
-                           h2 span.mw-headline { font-size: 12pt; font-weight: bold; font-style: italic; margin-left: 0.5em; } 
-                           h3 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; margin-left: 0.5em; } 
-                           h4 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; margin-left: 0.5em; color: #458CC1; } 
-                           h5 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; margin-left: 0.5em; color: #999999; } 
-                           h6 span.mw-headline { font-size: 10pt; font-style: italic; margin-left: 0.5em; color: #999999; } 
+                           h2 span.mw-headline { font-size: 12pt; font-weight: bold; } 
+                           h3 span.mw-headline { font-size: 11pt; font-weight: bold; } 
+                           h5 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; } 
+                           h4 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; color: #999999 } 
+                           h6 span.mw-headline { font-size: 10pt; font-style: italic; color: #999999; } 
                            a.new { color: #AAAAFF; text-decoration: line-through; } /* Links to pages that don't yet exist. */
                            
 
@@ -627,10 +627,12 @@ class UCLRCTemplate extends QuickTemplate {
                            .noticebox-warning-small { border: 1px solid black; background-color: #FFE0F0; width:300px; float: right; }
                            */
                            /* Contents box */
-                           #toc { background-color: #eeeeff; padding: 0.1em; margin: 1em; border: 1px solid black; }
+			   /* #toc { background-color: #eeeeff; padding: 0.1em; margin: 1em; border: 1px solid black; } */
+			   #toc { background-color: #f7f7f7; padding: 0.1em; margin: 1em 0em 1em 0em; border: 1px solid #cccccc; } 
                            #toctitle h2 { font-size:12pt; font-weight: bold; }
                            #toc ul { margin: 0 0 0 0; }
                            #lastmod { font-style: italic; text-align: right; list-style-type: none; }
+                           #viewcount { font-style: italic; text-align: right; list-style-type: none; }
                            <?php
                               global $wgUser;
                               if(  !StubObject::isRealObject( $wgUser )  
@@ -758,7 +760,7 @@ class UCLRCTemplate extends QuickTemplate {
                      ?>>
                     <img
                        id="edit_button"
-                       src="http://www.ucl.ac.uk/news/++resource++images/edit.gif"
+                       src="//www.ucl.ac.uk/news/++resource++images/edit.gif"
                        alt="edit page" width="10" height="10" /></a>
                  </span>
               </div>
