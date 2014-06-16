@@ -349,7 +349,7 @@ class UCLRCTemplate extends QuickTemplate {
                    </li>
                    <li>
                       <a href="<?php ?>"><?php $this->html('title'); ?></a> 
-			<?php global $wgTitle; if ($wgTitle->isProtected('edit')) { ?>
+			<?php global $wgTitle; if (($wgUser->isLoggedIn()) && ($wgTitle->isProtected('edit'))) { ?>
 				<img style="height:10px;width:10px;" alt="This page is protected." title="This page is protected." src="/mediawiki119/skins/common/images/full_protect.svg" /> 
 			<?php } ?>
 		  </li>
