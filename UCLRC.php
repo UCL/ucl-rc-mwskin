@@ -167,7 +167,7 @@ class UCLRCTemplate extends QuickTemplate {
    <?php $this->html( 'headelement' ); ?>
    <head>
       <title><?php echo $this->data['title']; ?></title>
-      <link rel="shortcut icon" href="//www.ucl.ac.uk/<?php $this->ucldir(); ?> /++resource++images/favicon2.ico" />
+      <link rel="shortcut icon" href="//www.ucl.ac.uk/<?php $this->ucldir(); ?>/++resource++images/favicon2.ico" />
          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
          <meta name="contact.name" content="UCL Research Computing" />
          <meta name="contact.email" content="rc-support@ucl.ac.uk" />
@@ -179,7 +179,6 @@ class UCLRCTemplate extends QuickTemplate {
                  if($this->data['usercss']) { ?>
          <style type="text/css"><?php $this->html('usercss') ?></style>
          <?php   } ?>
-         <link rel="stylesheet" href="/skins/UCLRC.css" type="text/css" />
          <!--End MediaWiki Common Stylesheets-->
 
          <!--Start General Layout Styles-->
@@ -605,7 +604,7 @@ class UCLRCTemplate extends QuickTemplate {
                            h5 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; } 
                            h4 span.mw-headline { font-size: 11pt; font-weight: bold; font-style: italic; color: #999999 } 
                            h6 span.mw-headline { font-size: 10pt; font-style: italic; color: #999999; } 
-                           a.new { color: #AAAAFF; text-decoration: line-through; } /* Links to pages that don't yet exist. */
+                           a.new { color: #AAAAFF; text-decoration: none; border-bottom: 1px #AAAAFF dotted; } /* Links to pages that don't yet exist. */
                            
 
                            /* Diff page styling */

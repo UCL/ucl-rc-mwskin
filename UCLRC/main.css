@@ -1002,4 +1002,19 @@ a {
 	font-weight: normal !important;
 }
 
+.mw-search-formheader div.search-types ul li {
+	list-style-type: none !important;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+	margin-top: 0.3em;
+	margin-right: 0px;
+	margin-bottom: 0.3em;
+	margin-left: 1.6em;
+}
+
+p {
+	margin-top: 0.5em !important;
+	margin-bottom: 0.5em !important;
+}
 
