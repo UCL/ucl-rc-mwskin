@@ -348,8 +348,12 @@ class UCLRCTemplate extends QuickTemplate {
                       <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Wiki</a>
                    </li>
                    <li>
-                      <a href="<?php ?>"><?php $this->html('title'); ?></a>
-                </ul>
+                      <a href="<?php ?>"><?php $this->html('title'); ?></a> 
+			<?php global $wgTitle; if ($wgTitle->isProtected('edit')) { ?>
+				<img style="height:10px;width:10px;" alt="This page is protected." title="This page is protected." src="/mediawiki119/skins/common/images/full_protect.svg" /> 
+			<?php } ?>
+		  </li>
+		</ul>
                 <!--<div class="hlist" style="vertical-align:text-top; color: #ff0000;"> -->
                    <ul style="text-align: right;">
 <?php                   foreach( $this->data['personal_urls'] as $key => $item ) { ?>
