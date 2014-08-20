@@ -154,6 +154,14 @@ class UCLRCTemplate extends QuickTemplate {
             global $wgSitename;
             $this->set( 'sitename', $wgSitename );
       }
+      if ( !isset($this->data['sidebartitle']) ) {
+          global $wgSidebarTitle;
+          if (isset($wgSidebarTitle)) {
+              $this->set( 'sidebartitle', $wgSidebarTitle );
+          } else {
+              $this->set( 'sidebartitle', $this->data['sitename'] );
+          }
+      }
 
 
       /*************************************
@@ -388,7 +396,11 @@ class UCLRCTemplate extends QuickTemplate {
                       <div id="left-silva-content"
                            class="leftcontainer">
 
-                         <h3 class="heading"><?php $this->text('sitename'); ?></h3>
+                         <h3 class="heading">
+                            <?php 
+                                $this->text('sidebartitle'); 
+                            ?>
+                        </h3>
                          <ul class="disc"><?php /* No idea what disc stands for. */ ?>
 
 
