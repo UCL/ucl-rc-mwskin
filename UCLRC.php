@@ -350,18 +350,41 @@ class UCLRCTemplate extends QuickTemplate {
                       <a href="//www.ucl.ac.uk/">UCL Home</a>
                    </li>
                    <li>
-                      <a href="//www.ucl.ac.uk/research-computing/">RC</a>
+                      <a href="//www.ucl.ac.uk/isd/">ISD</a>
                    </li>
                    <li>
-                      <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Wiki</a>
+                      <a href="//www.ucl.ac.uk/isd/staff/research_services">RITS</a>
                    </li>
                    <li>
-                      <a href="<?php ?>"><?php $this->html('title'); ?></a> 
-			<?php global $wgTitle; if (($wgUser->isLoggedIn()) && ($wgTitle->isProtected('edit'))) { ?>
-				<img style="height:10px;width:10px;" alt="This page is protected." title="This page is protected." src="/mediawiki119/skins/common/images/full_protect.svg" /> 
-			<?php } ?>
-		  </li>
-		</ul>
+                      <a href="//www.ucl.ac.uk/isd/staff/research_services/research-computing">RCPS</a>
+                   </li>
+                   <li>
+                      <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Support Pages</a> / 
+                   
+                      <?php
+                         // Split the components of any subpages and make them into the same format as the stupid breadcrumbs
+                         $page_title = $this->data['title'];
+                         $page_title_elements = explode("/", $page_title);
+                         $page_title_crumbs = "";
+                         $crumb_iterator = 1;
+                         foreach ($page_title_elements as $page_title_element) {
+                             if ( $crumb_iterator != 1 ) { $page_title_crumbs .= " / "; }
+                             $up_to_here = implode("/", array_slice($page_title_elements,0,$crumb_iterator));
+                             $page_title_crumbs .= "<a href=\"{$up_to_here}\">$page_title_element</a>\n ";
+                             $crumb_iterator += 1;
+                         }
+
+                         global $wgTitle; 
+                         if (($wgUser->isLoggedIn()) && ($wgTitle->isProtected('edit'))) {
+                             $page_title_crumbs .= "<img style=\"height:10px;width:10px;\" alt=\"This page is protected.\" " .
+                                                   "title=\"This page is protected.\" " .
+                                                   "src=\"/mediawiki119/skins/common/images/full_protect.svg\" />";
+                         }
+                         echo $page_title_crumbs ;
+                      ?>
+                      <!--<a href="<?php ?>"><?php $this->html('title'); ?></a>  -->
+                   </li>
+		        </ul>
                 <!--<div class="hlist" style="vertical-align:text-top; color: #ff0000;"> -->
                    <ul style="text-align: right;">
 <?php                   foreach( $this->data['personal_urls'] as $key => $item ) { ?>
