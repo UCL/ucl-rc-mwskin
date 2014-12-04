@@ -353,10 +353,10 @@ class UCLRCTemplate extends QuickTemplate {
                       <a href="//www.ucl.ac.uk/isd/">ISD</a>
                    </li>
                    <li>
-                      <a href="//www.ucl.ac.uk/isd/staff/research_services">RITS</a>
+                      <a href="//www.ucl.ac.uk/isd/services/research_services">RITS</a>
                    </li>
                    <li>
-                      <a href="//www.ucl.ac.uk/isd/staff/research_services/research-computing">RCPS</a>
+                      <a href="//www.ucl.ac.uk/isd/services/research_services/research-computing">RCPS</a>
                    </li>
                    <li>
                       <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Support Pages</a> / 
@@ -762,7 +762,7 @@ class UCLRCTemplate extends QuickTemplate {
                        <span class="value">+44 (0)20 7679 2000</span>
                     </span>
                  </address>
-                 <p>&#169; UCL 1999&#8211;2012</p>
+                 <p>&#169; UCL 1999&#8211;2014</p>
               </div>
               <div id="editbar">
                  <span id="silvaedit">
