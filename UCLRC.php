@@ -762,7 +762,7 @@ class UCLRCTemplate extends QuickTemplate {
                        <span class="value">+44 (0)20 7679 2000</span>
                     </span>
                  </address>
-                 <p>&#169; UCL 1999&#8211;2014</p>
+                 <p>&#169; UCL 1999&#8211;<?php echo (date("Y")); ?></p>
               </div>
               <div id="editbar">
                  <span id="silvaedit">
