@@ -353,10 +353,10 @@ class UCLRCTemplate extends QuickTemplate {
                       <a href="//www.ucl.ac.uk/isd/">ISD</a>
                    </li>
                    <li>
-                      <a href="//www.ucl.ac.uk/isd/services/research_services">RITS</a>
+                      <a href="//www.ucl.ac.uk/isd/services/research_it">RITS</a>
                    </li>
                    <li>
-                      <a href="//www.ucl.ac.uk/isd/services/research_services/research-computing">RCPS</a>
+                      <a href="//www.ucl.ac.uk/isd/services/research_it/research-computing">RCPS</a>
                    </li>
                    <li>
                       <a href="<?php echo htmlspecialchars($this->data['nav_urls']['mainpage']['href']) ?>" >Support Pages</a> / 
