@@ -37,13 +37,16 @@ if ( ! defined( 'MEDIAWIKI' ) )
 
 
 // I'm not sure if this is required here in this file.
-require_once( dirname( dirname( __FILE__ ) ) . '/includes/SkinTemplate.php');
+require_once( dirname( dirname( __FILE__ ) ) . '/../includes/SkinTemplate.php');
 
 // initialize
 if( !defined( 'MEDIAWIKI' ) ){
    die( "This is a skins file for mediawiki and should not be viewed directly.\n" );
 }
- 
+
+// Add skin ID since autodiscovery has been deprecated -- must require this file from LocalSettings.php
+$wgValidSkinNames['uclrc'] = 'UCLRC';
+
 // inherit main code from SkinTemplate, set the CSS and template filter
 class SkinUCLRC extends SkinTemplate {
    var $useHeadElement = true;
